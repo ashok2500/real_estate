@@ -3,7 +3,7 @@ import { Realestate } from "./Components/Realestate"
 
 function App() {
   return (
-    <div>
+    <div className="bg">
       <Navbar /><br/>
       <Realestate/>
     </div>

@@ -1,20 +1,14 @@
 .nav{
     display: flex;
     justify-content:space-around;
-    gap: 80px;
 }
 .navbar{
     color: #FFFFFF;
 }
-.card{
-    display: flex;
-    justify-content: space-around;    
-}
 .input{
     display: flex;
-    justify-content: space-around;
-    padding-left: 420px;
-    padding-right: 420px;
+    justify-content: center;
+    gap: 10px;
 }
 .navmain{
     background-color: rgb(1, 1, 82);

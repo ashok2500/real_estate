@@ -5,7 +5,7 @@ import { Grid } from "@mui/material"
 export const Navbar=()=>{
   return (
     <div className="navmain">
-      <Grid container direction="row"sx={{justifyContent: "space-around",gap:"150px"}}>
+      <Grid container direction="row"sx={{justifyContent: "space-around"}}>
         <Grid>
             <img src="https://png.pngtree.com/png-vector/20230831/ourmid/pngtree-house-with-no-background-png-image_9197435.png" width={175} height={175}/>
         </Grid>
