@@ -1,4 +1,4 @@
-export const AboutUs=()=>{
+export const About=()=>{
   return (
     <div>
       <center>

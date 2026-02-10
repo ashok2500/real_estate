@@ -7,10 +7,11 @@ import { Property } from "./Property"
 export const Realestate=()=>{
   return (
     <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/property" element={<Property/>}/>
-      <Route path="/about" element={<AboutUs/>}/>
-      <Route path="/contact" element={<ContactUs/>}/>
+      <Route path="/home" element={<Home />} />
+<Route path="/properties" element={<Property role={role} />} />
+<Route path="/about" element={<About />} />
+<Route path="/contact" element={<Contact />} />
+
     </Routes>
   )
 }
