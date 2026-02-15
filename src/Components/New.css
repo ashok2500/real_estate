@@ -1,6 +1,7 @@
 .nav{
     display: flex;
     justify-content:space-around;
+    gap: 70px;
 }
 .navbar{
     color: #FFFFFF;
@@ -12,4 +13,23 @@
 }
 .navmain{
     background-color: rgb(1, 1, 82);
+}
+.login {
+  height: 1080px;
+  width: 1510px;
+  background-image: url('https://image2url.com/r2/default/images/1770223437719-4eabea23-01e8-4d92-8625-2d8b04a912c5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card{
+    background-color: rgb(53, 53, 53);
+}
+.home {
+  height: 1080px;
+  width: 1500px;
+  background-image: url('https://image2url.com/r2/default/images/1770223437719-4eabea23-01e8-4d92-8625-2d8b04a912c5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

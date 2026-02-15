@@ -58,44 +58,19 @@ export const Property = ({ role }) => {
   )
 
   return (
-    <div>
+    <div className="home">
       <center>
       <br/>
-        {/* Search → BOTH */}
-        <input
-          type="text"
-          placeholder="Search by Name, Location or Price"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          style={{ marginBottom: "10px", padding: "5px", width: "300px" }}
-        />
-        <hr />
+        
 
         {/* ✅ FORM ONLY FOR ADMIN */}
         {role === "admin" && (
           <>
             <div className="input">
-              <input
-                type="text"
-                name="name"
-                value={form.name}
-                placeholder="Property Name"
-                onChange={handleChange}
-              />
-              <input
-                type="text"
-                name="location"
-                value={form.location}
-                placeholder="Location"
-                onChange={handleChange}
-              />
-              <input
-                type="text"
-                name="price"
-                value={form.price}
-                placeholder="Price"
-                onChange={handleChange}
-              />
+              <input name="name" placeholder="Name" value={form.name} onChange={handleChange} style={{ width: "200px", height: "15px", fontSize: "15px", padding: "8px" }}/>{" "}
+              <input name="location" placeholder="Location" value={form.location} onChange={handleChange} style={{ width: "200px", height: "15px", fontSize: "15px", padding: "8px" }}/>{" "}
+              <input name="price" placeholder="Price" value={form.price} onChange={handleChange} style={{ width: "200px", height: "15px", fontSize: "15px", padding: "8px" }}/>
+            <br />
             </div>
 
             <br />
@@ -111,6 +86,15 @@ export const Property = ({ role }) => {
             <hr />
           </>
         )}
+        {/* Search → BOTH */}
+        <input
+          type="text"
+          placeholder="Search by Name, Location or Price"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          style={{ marginBottom: "10px", padding: "5px", width: "300px" }}
+        />
+        <hr />
       </center>
 
       {/* PROPERTY LIST */}

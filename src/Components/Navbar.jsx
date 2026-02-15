@@ -5,41 +5,20 @@ import "./New.css"
 export const Navbar = ({ role, onLogout }) => {
   return (
     <div className="navmain">
-      <Grid container direction="row" sx={{ justifyContent: "space-around", alignItems: "center" }}>
+      <br/>
+      <Grid container justifyContent="space-around" gap={20} alignItems="center">
         <Grid>
-          <img src="https://png.pngtree.com/png-vector/20230831/ourmid/pngtree-house-with-no-background-png-image_9197435.png"width={175}height={175}/>
+          <img src="https://image2url.com/r2/default/images/1770220690302-863ac629-3093-4652-90a5-7e8d321de7da.png"width={214}height={121}/>
         </Grid>
-        <Grid>
+        <Grid style={{paddingRight:"100px"}}>
           <center>
-            <div className="navbar">
-              <br />
-              <h1 style={{ color: "yellow" }}>Real Estate Management</h1>
-              <nav>
-                <div className="nav">
-                  <h3>
-                    <Link to="/home" style={{ textDecoration: "none", color: "white" }}>
-                      Home
-                    </Link>
-                  </h3>
-                  <h3>
-                    <Link to="/properties" style={{ textDecoration: "none", color: "white" }}>
-                      Property
-                    </Link>
-                  </h3>
-                  <h3>
-                    <Link to="/about" style={{ textDecoration: "none", color: "white" }}>
-                      About
-                    </Link>
-                  </h3>
-                  <h3>
-                    <Link to="/contact" style={{ textDecoration: "none", color: "white" }}>
-                      Contact
-                    </Link>
-                  </h3>
-                </div>
-              </nav>
-              <br /><br />
-            </div>
+          <h1 style={{fontSize:"50px",fontFamily:"Georgia, serif"}}><span style={{ color: "white" }}>home</span><span style={{ color: "limegreen" }}>spot</span></h1>
+          <div className="nav">
+            <h3><Link to="/home"  style={{ textDecoration: "none", color: "white" ,fontSize:"25px"}}>Home</Link></h3>
+            <h3><Link to="/properties"  style={{ textDecoration: "none", color: "white" ,fontSize:"25px"}}>Property</Link></h3>
+            <h3><Link to="/about"  style={{ textDecoration: "none", color: "white" ,fontSize:"25px"}}>About</Link></h3>
+            <h3><Link to="/contact"  style={{ textDecoration: "none", color: "white" ,fontSize:"25px"}}>Contact</Link></h3>
+          </div>
           </center>
         </Grid>
         <Grid>
@@ -50,6 +29,7 @@ export const Navbar = ({ role, onLogout }) => {
               </center>
         </Grid>
       </Grid>
+      <br/>
     </div>
   )
 }

@@ -1,9 +1,11 @@
+import './New.css'
 export const About=()=>{
   return (
-    <div>
+    <div className='home'>
+      <br/>
       <center>
-        <h1>About</h1>
-        <h3>This Website is used for Sale and Buy the Property</h3>
+        <h1 style={{color:'white'}}>About</h1>
+        <h3 style={{color:'white'}}>This Website is used for Sale and Buy the Property</h3>
       </center>
     </div>
   )

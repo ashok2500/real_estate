@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Button, Card, CardContent, TextField } from "@mui/material"
-
+import './New.css'
 const Login = ({ setRole, setLoggedIn }) => {
 
   const [email, setEmail] = useState("")
@@ -23,17 +23,22 @@ const Login = ({ setRole, setLoggedIn }) => {
   }
 
   return (
-    <div style={{ display: "flex", justifyContent: "center", marginTop: "100px" }}>
-      <Card sx={{ width: 350 }}>
+    <div className="login">
+      <br/>
+      <div style={{ display: "flex", justifyContent: "center", marginTop: 100 }}>
+      <Card sx={{ width: 350, margin: 2, border: "4px solid white"  }}>
+        <div className="card">
         <CardContent>
-          <h2 style={{ textAlign: "center" }}>Login</h2>
+          <center>
+        <img src="https://image2url.com/r2/default/images/1770220690302-863ac629-3093-4652-90a5-7e8d321de7da.png"width={214}height={121}/>
+          <h2 style={{color:"white"}}>Login</h2>
 
           <TextField
             label="Email"
             fullWidth
             margin="normal"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value)}sx={{input: { color: "white" },label: { color: "white" },"& label.Mui-focused": { color: "white" },"& .MuiOutlinedInput-root": {"& fieldset": { borderColor: "white" },"&:hover fieldset": { borderColor: "white" },"&.Mui-focused fieldset": { borderColor: "white" }}}}
           />
 
           <TextField
@@ -42,7 +47,7 @@ const Login = ({ setRole, setLoggedIn }) => {
             fullWidth
             margin="normal"
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}sx={{input: { color: "white" },label: { color: "white" },"& label.Mui-focused": { color: "white" },"& .MuiOutlinedInput-root": {"& fieldset": { borderColor: "white" },"&:hover fieldset": { borderColor: "white" },"&.Mui-focused fieldset": { borderColor: "white" }}}}
           />
 
           {error && <p style={{ color: "red" }}>{error}</p>}
@@ -55,8 +60,11 @@ const Login = ({ setRole, setLoggedIn }) => {
           >
             Login
           </Button>
+          </center>
         </CardContent>
+        </div>
       </Card>
+    </div>
     </div>
   )
 }
